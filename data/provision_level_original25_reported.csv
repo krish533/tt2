@@ -1,0 +1,13 @@
+item,upward_percent,downward_percent,fisher_p
+Adds or expands ownership claims,67,63,1.000
+Adds or expands assignment obligations,50,58,1.000
+Adds or expands equity provisions,50,53,1.000
+Adds or expands conflict-of-interest provisions,0,37,0.137
+Adds or expands release/waiver to inventor,0,53,0.051
+Adds or expands dispute or appeal procedures,67,26,0.142
+Adds or expands student coverage,33,53,0.645
+Adds or expands copyright/software coverage,33,53,0.645
+Inventor share: up,50,11,0.070
+Inventor share: mixed,0,5,1.000
+Inventor share: same,33,37,1.000
+Inventor share: not stated,17,47,0.345
