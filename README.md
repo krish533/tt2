@@ -37,9 +37,7 @@ The analysis is observational. Universities choose when and how to revise their 
 
 ## Data
 
-The committed files in `data/` contain the policy level PCSI input and documentary revision coding used to construct the event sample.
-
-The AUTM analysis file is not duplicated in the repository. `code/fetch_inputs.py` retrieves the frozen analysis input from the tested source snapshot and verifies its SHA-256 checksum before use. The same script retrieves the sentence level input used for the descriptive revision content comparison.
+The committed files in `data/` contain the documentary revision coding used to construct the event sample. The larger policy level PCSI file, the AUTM analysis file, and the sentence level policy input are fetched from frozen source snapshots by `code/fetch_inputs.py` and verified by SHA-256 checksum before use.
 
 Users are responsible for complying with applicable AUTM data use terms.
 
