@@ -15,6 +15,11 @@ MERGED_AUTM_URL = (
 MERGED_AUTM_SHA256 = "070f10179b34a0730d1f09ea3322d21e8f32e20d3036760df2adfef182aa2d4b"
 # Paper 1 sentence-level text and scores, used only for the Table 5 keyword comparison.
 P1_COMMIT = "25a9472b34334825b6d6c6a334f5b88eb00695b5"
+P1_POLICY_URL = (
+    "https://raw.githubusercontent.com/krish533/Tech-transfer-1/"
+    f"{P1_COMMIT}/P1_replication_package/data/derived/policy_level_indices_institution_year.csv"
+)
+P1_POLICY_SHA256 = "694c21acc07d2a50ed27199d0e7ec01bb6974f08f843cbce2d7da4318f864198"
 P1_SENTENCES_URL = (
     "https://raw.githubusercontent.com/krish533/Tech-transfer-1/"
     f"{P1_COMMIT}/P1_replication_package/data/derived/sentence_scores_canonical.csv"
@@ -49,6 +54,11 @@ def fetch(url: str, dest: Path, expected_sha256: str) -> None:
 
 def main() -> None:
     fetch(MERGED_AUTM_URL, DATA / "merged_autm.csv", MERGED_AUTM_SHA256)
+    fetch(
+        P1_POLICY_URL,
+        DATA / "p1_policy_level_indices_institution_year.csv",
+        P1_POLICY_SHA256,
+    )
     fetch(P1_SENTENCES_URL, DATA / "p1_sentence_scores_canonical.csv", P1_SENTENCES_SHA256)
 
 
