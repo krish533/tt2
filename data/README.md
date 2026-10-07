@@ -34,3 +34,8 @@ Users are responsible for complying with applicable AUTM data use terms.
 ## Generated files
 
 The replication scripts create `data/derived/` as needed, including the explicit stacked datasets for the preferred 34 event design and the strict 29 event sensitivity.
+
+
+## Hand coded provision appendix
+
+`provision_level_original25_reported.csv` preserves the reported aggregate values for the original 25 event provision level appendix. The underlying row level hand coding is not available in this clean package, so this file documents the reported descriptive table rather than independently rebuilding it from raw provision labels.
